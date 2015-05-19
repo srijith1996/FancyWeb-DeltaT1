@@ -1,0 +1,39 @@
+/*Main stylesheet for the div sections and the heading*/
+#heading{
+	text-align: center;
+	font-family: Algerian, Tahoma, Verdana, serif;
+	background-color: #E0C5BF;
+	color: #E00B0B;
+}
+#border{
+	margin: auto;
+	width: 800px;
+	border: none;
+}
+div div{
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: green;
+}
+
+.functionalBox{
+	height: 300px;
+	width: 300px;
+}
+
+#middleman{
+	height: 60px;
+	width: 150px;
+	text-align: center;
+	background-color: black;
+	color: #A1B3B3;
+}
+
+#box_one{
+	margin-left: 0 auto;
+}
+#box_two{
+	margin-right: 0 auto;
+}
