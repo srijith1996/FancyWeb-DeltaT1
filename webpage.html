@@ -3,14 +3,15 @@
 	<!-- This is just the display design, the actual beauty of the working lies in the javascript file -->
 	<head>
 		<meta>Author: Srijith Nair</meta>
+		<br/>
 		<meta>Date: May 18th, 2015</meta>
 		<title>Chameleon</title>
 		<link type='text/css' rel='stylesheet' href='styler.css'/>
 	</head>	
 	
-	<body>
+	<body onload='setRandomColor()'>
 		
-		<h3 id='heading'>!!Click any of the two coloured sections and watch the fun!!</h3>
+		<h3 id='heading'>!!Click any of the two coloured sections and <em>watch the fun</em>!!</h3>
 		<br/><br/><br/>
 		
 		
@@ -19,7 +20,7 @@
 			<div id='box_one' onclick='changeColor("box_two")'></div>
 			
 			<!--For relating the two boxes-->
-			<div id='middleman'>Watch these Boxes<br/>as you click 'em!</div>
+			<div id='middleman'><strong>Watch these Boxes<br/>as you click 'em!</strong></div>
 			
 			<!--Box 2 -->
 			<div id='box_two' style='background-color: #0CA090' onclick='changeColor("box_one")'></div>
@@ -30,6 +31,10 @@
 				}
 				function changeColor(divID){
 					document.getElementById(divID).setAttribute("style", getRandomColor());
+				}
+				function setRandomColor(){
+					document.getElementById('box_one').setAttribute("style", getRandomColor());
+					document.getElementById('box_two').setAttribute("style", getRandomColor());				
 				}
 			</script>
 		</div>

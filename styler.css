@@ -2,8 +2,11 @@
 #heading{
 	text-align: center;
 	font-family: Algerian, Tahoma, Verdana, serif;
-	background-color: #E0C5BF;
-	color: #E00B0B;
+	background-color: #28282E;
+	color: #A1B3B3;
+}
+body{
+	background-color: #D5D6A7;
 }
 #border{
 	margin: auto;
@@ -24,10 +27,10 @@ div div{
 }
 
 #middleman{
-	height: 60px;
+	height: 75px;
 	width: 150px;
 	text-align: center;
-	background-color: black;
+	background-color: #28282E;
 	color: #A1B3B3;
 }
 
