@@ -32,8 +32,12 @@ div div{
 }
 
 #box_one{
+height: 300px;
+	width: 300px;
 	margin-left: 0 auto;
 }
 #box_two{
+height: 300px;
+	width: 300px;
 	margin-right: 0 auto;
 }

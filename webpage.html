@@ -6,24 +6,35 @@
 		<meta>Date: May 18th, 2015</meta>
 		<title>Chameleon</title>
 		<link type='text/css' rel='stylesheet' href='styler.css'/>
-		<script type='text/javascript' src='ClickManipulator.js'></script>
-	</head>
+	</head>	
 	
 	<body>
 		
 		<h3 id='heading'>!!Click any of the two coloured sections and watch the fun!!</h3>
 		<br/><br/><br/>
 		
+		
 		<div id='border'>
-		<!--Box 1 -->
-			<div class='functionalBox' id='box_one'></div>
+			<!--Box 1 -->
+			<div id='box_one' onclick='changeColor("box_two")'></div>
 			
 			<!--For relating the two boxes-->
 			<div id='middleman'>Watch these Boxes<br/>as you click 'em!</div>
 			
 			<!--Box 2 -->
-			<div class='functionalBox' id='box_two'></div>
+			<div id='box_two' style='background-color: #0CA090' onclick='changeColor("box_one")'></div>
+		
+			<script type='text/javascript'>
+				function getRandomColor(){
+					return "background-color: #" + (Math.floor(Math.random()*16777215)).toString(16);
+				}
+				function changeColor(divID){
+					document.getElementById(divID).setAttribute("style", getRandomColor());
+				}
+			</script>
 		</div>
+
+		
 		
 	</body>
 	
